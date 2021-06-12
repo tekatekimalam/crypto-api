@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Head from "next/head";
 
-const Layout = ({ children, title = "Crypto Tracker" }) => {
+const Layout = ({ children, title = "" }) => {
   return (
     <div className="layout">
       <Head>
-        <title>{title}</title>
+        <title>{`Crypto Tracker ${title}`}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="header">

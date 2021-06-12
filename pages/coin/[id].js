@@ -2,9 +2,10 @@ import Layout from "../../components/Layout";
 import styles from "./Coin.module.css";
 
 const Coin = ({ coin }) => {
-  console.log(coin);
+  const subtitle = "|| " + coin.name;
+
   return (
-    <Layout>
+    <Layout title={subtitle}>
       <div className={styles.coin_page}>
         <div className={styles.coin_container}>
           <img
